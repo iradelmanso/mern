@@ -19,7 +19,7 @@ app.use('/api/tasks', require('./routes/task.routes'));
 // la variable de entorno __dirname nos devuelve la ruta de la ubicación de index.js en este caso.
 // usando path.join establece el slash correspondiente dependiendo el sistema operativo.
 // con el método static() establecemos donde tenemos la carpeta public
-app.use(express.static(path.join(__dirname, 'public'))) 
+app.use(express.static(path.join(__dirname, 'public'))); 
 
 
 // Starting server
